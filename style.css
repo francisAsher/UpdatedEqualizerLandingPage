@@ -1,0 +1,371 @@
+/* Landing page colors */
+:root {
+    --color-light-green: #66E2DC;
+    --color-light-red: #FA7453;
+    --color-light-yellow: #FFB964;
+    --color-white: #fff;
+    --color-black: #000;
+    --color-gray: #8f8d8d;
+
+}
+
+/* body and box-sizing*/
+body {
+	font-family: "Arial", sans-serif;
+	background-color: var(--color-white);
+	color: var(--color-black);
+    margin: 0px;
+}
+
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+
+/* responsive backgrounds */
+.bg-main-desktop {
+    background: linear-gradient( rgba(226, 224, 223, 0.4), rgba(247, 245, 245, 0.4)), url('../images/bg-main-desktop.png');
+    background-repeat: repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.bg-main-mobile {
+    background: linear-gradient( hsla(0, 0%, 100%, 0.4), rgba(255, 255, 255, 0.4)), url('../images/bg-main-mobile.png');
+    background-repeat: repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.bg-main-tablet {
+    background: linear-gradient( rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url('../images/bg-main-tablet.png');
+    background-repeat: repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+
+/* buttons */
+.landing-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 400px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--color-main);
+    color: var(--color-white);
+  }
+
+  /* hover on buttons */
+  .landing__ios-btn { background-color: var(--color-black); color: var(--color-white); }
+  .landing__android-btn { background-color: var(--color-white); color: var(--color-black); }
+  .landing__ios-btn:hover { background-color: var(--color-light-green); color: var(--color-white); }
+  .landing__android-btn:hover { background-color: var(--color-light-yellow); color: var(--color-black); }
+
+
+  /* basic page fonts */
+  h1 { font-size: 80px; }
+  h2 { font-size: 40px; color: var(--color-white);}
+  span { font-size: 20px; color: var(--color-gray)}
+  .gopremium__desc { font-size: 20px; color: var(--color-white);}
+  .gopremium__currency { font-size: 70px; color: var(--color-white)}
+  .gopremium__div {padding-top: 125px;}
+
+
+  /* container and row */
+  .container {margin: 30px 40px;}
+
+  .row {
+    display: flex;
+	justify-content: space-around;
+  }
+
+  /* welcome section */
+  .row__left {
+    width: 80%;
+    margin: 20px;
+  }
+
+  .row__right {
+    width: 25%;
+  }
+  
+  /*middle section*/
+  .middle {margin: 250px 0px;}
+  .parentBox {
+    position: relative;
+    height: 800px;
+    border-radius: 5px;
+    background-color: var(--color-black);
+  }
+
+  .firstChild {
+    position: absolute;
+    left: 140px;
+    top: -150px;
+    width: 300px;
+  }
+
+  .secondChild {
+    position: absolute;
+    left: 340px;
+    top: 50px;
+  }
+
+  .thirdChild {
+    position: absolute;
+    right: 140px;
+    bottom: -150px;
+    width: 600px;
+    height: 750px;
+    padding: 60px;
+    border-radius: 5px;
+    background-color: var(--color-light-red);
+  }
+
+
+  /*footer*/
+  .footer {padding: 10px;}
+  .footer__row-left {
+    width: 30%;
+  }
+
+  .footer__row-middle {
+    width: 50%;
+    margin-left: 20px;
+  }
+
+  .footer__row-right {
+    width: 20%;
+  }
+
+  .socialmedia__icons { margin-left: 5px; }
+  .socialmedia__icons:hover { background-color: var(--color-light-red); }
+
+
+
+
+/* start of small devices, tablet & medium laptop css*/
+@media screen and (max-width: 1024px) {
+
+    /* btn */
+  .landing-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 200px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--color-main);
+    color: var(--color-white);
+  }
+
+  /* hover btn */
+  .landing__ios-btn { background-color: var(--color-black); color: var(--color-white); }
+  .landing__android-btn { background-color: var(--color-white); color: var(--color-black); }
+  .landing__ios-btn:hover { background-color: var(--color-light-green); color: var(--color-white); }
+  .landing__android-btn:hover { background-color: var(--color-light-yellow); color: var(--color-black); }
+
+
+  /* fonts */
+  h1 { font-size: 25px; }
+  h2 { font-size: 20px; color: var(--color-white);}
+  span { font-size: 15px; color: var(--color-gray)}
+  .gopremium__desc { font-size: 15px; color: var(--color-white);}
+  .gopremium__currency { font-size: 40px; color: var(--color-white)}
+  .gopremium__div {padding-top: 45px;}
+
+
+
+  /* container and row */
+  .container {margin: 0px;}
+
+  .row {
+    display: flex;
+	justify-content: space-around;
+  }
+
+  /* welcome section */
+  .row__left {
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  .row__right {
+    flex-direction: column;
+  }
+
+
+
+
+  
+/* if Mobile small, medium & large */
+@media screen and (max-width: 425px) {
+  /*hide object on small devices*/
+  .hideObjectOnMobile {display: none;}
+
+  /* rows */
+  .row {
+    flex-direction: column;
+  }
+
+  /*middle section*/
+  .middle {margin: 200px 0px 300px 0px;}
+  .parentBox {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    border-radius: 0px;
+  }
+
+  .firstChild {
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    width: 70%;
+    padding-left: 40px;
+  }
+
+  .secondChild {
+    position: static;
+    width: 100%;
+    height: 400px;
+  }
+
+  .thirdChild {
+    position: static;
+    width: 100%;
+    height: 450px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: var(--color-light-red);
+  }
+
+  
+  /*footer*/
+  .footer {padding: 10px;}
+  .footer__row-left {
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .footer__row-middle {
+    flex-direction: column;
+    width: 100%;
+    margin-left: 0px;
+    margin-bottom: 50px;
+  }
+
+  .footer__row-right {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .socialmedia__icons { margin-left: 5px; }
+  .socialmedia__icons:hover { background-color: var(--color-light-red); }
+}
+
+
+
+
+/* if Tablet */
+@media screen and (min-width: 768px) {
+    /* welcome section */
+    .row__left {
+        width: 80%;
+        margin: 20px;
+    }
+
+    .row__right {
+        width: 20%;
+    }
+    
+    .row__right-img {width: 150px; padding: 10px;}
+    
+    /*middle section*/
+    .middle {margin: 200px 0px 300px 0px;}
+    .parentBox {
+        position: relative;
+        height: 500px;
+        border-radius: 5px;
+        background-color: var(--color-black);
+      }
+    
+      .firstChild {
+        position: absolute;
+        left: 140px;
+        top: -150px;
+        width: 200px;
+      }
+    
+      .secondChild {
+        position: absolute;
+        left: 340px;
+        top: 50px;
+        width: 150px;
+      }
+    
+      .thirdChild {
+        position: absolute;
+        right: 100px;
+        bottom: -150px;
+        width: 300px;
+        height: 550px;
+        padding: 60px;
+        border-radius: 5px;
+        background-color: var(--color-light-red);
+      }
+  }
+
+
+
+
+
+/* if Laptop medium */
+@media screen and (min-width: 1024px) {
+    /*middle section*/
+    .middle {margin: 200px 0px 300px 0px;}
+    .parentBox {
+        position: relative;
+        height: 600px;
+        border-radius: 5px;
+        background-color: var(--color-black);
+      }
+    
+      .firstChild {
+        position: absolute;
+        left: 140px;
+        top: -150px;
+        width: 300px;
+      }
+    
+      .secondChild {
+        position: absolute;
+        left: 420px;
+        top: 50px;
+        width: 150px;
+      }
+    
+      .thirdChild {
+        position: absolute;
+        right: 100px;
+        bottom: -250px;
+        width: 300px;
+        height: 550px;
+        padding: 60px;
+        border-radius: 5px;
+        background-color: var(--color-light-red);
+      }
+  }
+
+  /* end of small devices, tablet & medium laptop css*/
+}
