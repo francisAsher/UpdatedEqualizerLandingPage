@@ -11,7 +11,7 @@
 
 /* body and box-sizing*/
 body {
-	font-family: "Arial", sans-serif;
+	font-family: IBM Plex Sans Reg, sans-serif;
 	background-color: var(--color-white);
 	color: var(--color-black);
     margin: 0px;
@@ -203,6 +203,19 @@ body {
     flex-direction: column;
   }
 
+  .bottom-left{
+    position: absolute;
+    bottom: -50px;
+  
+  }
+
+  .footer__row-middle{
+    position: absolute;
+    left: 60px;
+  }
+
+  
+
 
 
 
@@ -251,11 +264,14 @@ body {
 
   
   /*footer*/
-  .footer {padding: 10px;}
+  .footer {
+    padding-left: 10px;
+  }
   .footer__row-left {
     flex-direction: column;
     width: 100%;
     margin-bottom: 50px;
+  
   }
 
   .footer__row-middle {
@@ -274,6 +290,12 @@ body {
   .socialmedia__icons:hover { background-color: var(--color-light-red); }
 }
 
+.bottom-left{
+  position: absolute;
+  top: 90em;
+
+}
+
 
 
 
@@ -289,7 +311,10 @@ body {
         width: 20%;
     }
     
-    .row__right-img {width: 150px; padding: 10px;}
+    .row__right-img {
+      width: 150px; 
+      padding: 10px;
+    }
     
     /*middle section*/
     .middle {margin: 200px 0px 300px 0px;}
@@ -324,6 +349,11 @@ body {
         border-radius: 5px;
         background-color: var(--color-light-red);
       }
+
+      .bottom-left{
+        padding-right: 50px;
+        margin-right: 50px;
+        }
   }
 
 
@@ -368,4 +398,21 @@ body {
   }
 
   /* end of small devices, tablet & medium laptop css*/
+}
+
+
+/* updates on typography */
+.bottom-left{
+position: absolute;
+left: 150px;
+}
+
+
+#top-left{
+  position: absolute;
+  left: 60px;
+}
+
+h1{
+  margin-top: 120px;
 }
